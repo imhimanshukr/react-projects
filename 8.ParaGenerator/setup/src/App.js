@@ -7,7 +7,7 @@ const App = () => {
 	const submitHandler = (e) =>{
 		e.preventDefault();
 		let amount = parseInt(count);
-		if(amount == 0 || !amount){
+		if(amount === 0 || !amount){
 			alert("Please enter the amount!");
 		}
 		setText(data.slice(0, amount));
